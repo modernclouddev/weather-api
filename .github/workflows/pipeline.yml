@@ -1,7 +1,7 @@
 name: Build Weather API Container
 on: [push]
 env:
-  DOCKER_REGISTRY: cdwms.azurecr.io
+  DOCKER_REGISTRY: ${{ secrets.DOCKER_USERNAME }}.azurecr.io
   IMAGE_NAME: modernclouddev/weather-api
 jobs:
   build:
