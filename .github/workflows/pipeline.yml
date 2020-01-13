@@ -2,7 +2,7 @@ name: Build Weather API Container
 on: [push]
 env:
   DOCKER_REGISTRY: ${{ secrets.DOCKER_USERNAME }}.azurecr.io
-  IMAGE_NAME: modernclouddev/weather-api
+  IMAGE_NAME: hackfest/weather-api
 jobs:
   build:
     runs-on: ubuntu-latest
